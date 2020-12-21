@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mdb.min.css">
+        <link rel="stylesheet" href="css/hover.css">
+        <link rel="stylesheet" href="css/imagehover.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">IMDb</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span id="color"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link hvr-underline-from-center" href="#">Movies
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="#">Tv-Shows</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle hvr-underline-from-center"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                Sign in
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Free</a>
+                                <a class="dropdown-item" href="#">IMDb-pro</a>
+                                <a class="dropdown-item" href="#">IMDb-App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-poll-h"></i>Watchlist</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input
+                            class="form-control mr-sm-2"
+                            type="search"
+                            placeholder="Search in Site"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h6 class="sort">Sort By</h6>
+            <select class="mdb-select md-form filting" searchable="Search here..">
+                <option class="one" value="" disabled="disabled" selected="selected">Genre</option>
+                <option class="one boo" value="1">All</option>
+                <option class="one boo" value="2">Drama</option>
+                <option class="one boo" value="3">Crime</option>
+                <option class="one boo" value="4">Action</option>
+            </select>
+            <select class="mdb-select md-form filting" searchable="Search here..">
+                <option class="one" value="" disabled="disabled" selected="selected">Age Rating</option>
+                <option value="1">All</option>
+                <option value="2">0+</option>
+                <option value="3">12+</option>
+                <option value="4">12+</option>
+                <option value="5">14+</option>
+                <option value="6">16+</option>
+                <option value="7">18+</option>
+            </select>
+            <br>
+            <br>
+            <p class="alphabet other">Alphabet</p>
+            <p class="rate other">Users Rating</p>
+            <p class="votes other">Votes</p>
+            <p class="release other">Release Date</p>
+            <p class="low other">Low to High</p>
+            <p class="high other">High to Low</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row" id="products">
+                <div class="col-lg-3 net" data-aos="zoom-in">
+                    <div class="card hvr-float">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="image/shawshank.jpg" class="img-fluid"/>
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">The Shawshank Redemption (1994)</h6>
+                            <p class="card-text imdb">Drama</p>
+                            <p class="card-text imdb">Users Rating 9.3</p>
+                            <p class="card-text imdb">2.318.988 views
+                                <i class="far fa-eye"></i>
+                            </p>
+                            <a href="#!" class="btn btn-primary listing">Go Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/index.js"></script>
+
+</html>
